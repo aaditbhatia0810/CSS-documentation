@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+<title>CSS Documentation page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <a href="#Introduction" class="nav-link" rel="internal"><li> Introduction</li></a>
+            <a href="#Syntax" class="nav-link" rel="internal"><li> Syntax</li></a>
+            <a href="#Borders" class="nav-link" rel="internal"><li> Borders</li></a>
+            <a href="#Margin" class="nav-link" rel="internal"><li> Margin</li></a>
+            <a href="#Padding" class="nav-link" rel="internal"><li> Padding</li></a>
+            <a href="#Max-width" class="nav-link" rel="internal"><li> Max-width</li></a>
+            <a href="#Inline-block" class="nav-link" rel="internal"><li> Inline-block</li></a>
+            <a href="#Position" class="nav-link" rel="internal"><li> Position</li></a>
+            <a href="#Overflow" class="nav-link" rel="internal"><li> Overflow</li></a>
+            <a href="#Flex" class="nav-link" rel="internal"><li> Flex</li></a>
+            <a href="#Grid" class="nav-link" rel="internal"><li> Grid</li></a>
+            <a href="#Height-width" class="nav-link" rel="internal"><li> Height-width</li></a>
+            <a href="#Tables" class="nav-link" rel="internal"><li> Tables</li></a>
+            <a href="#Display" class="nav-link" rel="internal"><li> Display</li></a>
+            <a href="#Icons" class="nav-link" rel="internal"><li> Icons</li></a>
+        </ul>
+    </nav>
+   <main id="main-doc">
+       <section class="main-section" id="Introduction">
+           <header>Introduction</header>
+           <article>
+            <h4>What is CSS?</h4>
+             <li>CSS stands for Cascading Style Sheets.</li>
+             <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+             <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</li>
+             <li>External stylesheets are stored in CSS files.</li>
+             <h4>Why use CSS?</h4>
+                 <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. </p>
+             </article>
+       </section>
+       <section class="main-section" id="Syntax">
+           <header>Syntax</header>
+             <article>
+                 <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                 <P>The declaration block contains one or more declarations separated by semicolons.</P>
+                 <p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+                 <p>In the following example all p elements will be center-aligned, with a red text color:</p>
+<code>p {
+text-align: center;
+color: red;
+}
+</code>    		  	
+             </article>
+       </section>
+       <section class="main-section" id="Borders">
+           <header>Borders</header>
+             <article>
+                 <p>The border-style property specifies what kind of border to display.</p>
+                 <p>The following values are allowed:</p>
+                 <li>dotted - Defines a dotted border</li>
+                 <li>dashed - Defines a dashed border</li>
+                 <li>solid - Defines a solid border</li>
+                 <li>double - Defines a double border</li>
+             </article>
+       </section>
+       <section class="main-section" id="Margin">
+           <header>Margin</header>
+             <article>
+                 <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+                 <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+                 <h4>Margin properties:-</h4>
+                 <P>CSS has properties for specifying the margin for each side of an element:</P>
+                 <li>margin-top</li>
+                 <li>margin-right</li>
+                 <li>margin-bottom</li>
+                 <li>margin-left</li>
+<code>p {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 150px;
+margin-left: 80px;
+}
+</code>
+             </article>
+       </section>
+       <section class="main-section" id="Padding">
+           <header>Padding</header>
+             <article>
+                 <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+                 <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+                 <h4>Padding properties:-</h4>
+                 <p>CSS has properties for specifying the padding for each side of an element:</p>
+                 <li>padding-top</li>
+                 <li>padding-right</li>
+                 <li>padding-bottom</li>
+                 <li>padding-left</li>
+<code>div {
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
+}
+</code>
+             </article>
+       </section>
+       <section class="main-section" id="Max-width">
+           <header>Max-width</header>
+             <article>
+                 <h4>Using width, max-width and margin: auto;</h4>
+                 <p>As mentioned in the previous chapter; a block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+                 <p>Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins.</p>
+                 
+             </article>
+       </section>
+       <section class="main-section" id="Inline-block">
+           <header>Inline-block</header>
+             <article>
+                 <h4>The display: inline-block Value</h4>
+                 <p>Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.</p>
+                 <p>Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.</p>
+                 <p>Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.</p>
+             </article>
+       </section>
+       <section class="main-section" id="Position">
+           <header>Position</header>
+             <article>
+                 <h4>The position properties</h4>
+                 <p>he position property specifies the type of positioning method used for an element.</p>
+                 <p>There are five different position values:</p>
+                 <li>static</li>
+                 <li>relative</li>
+                 <li>fixed</li>
+                 <li>absolute</li>
+                 <li>sticky</li>
+<code>div.static {
+position: static;
+border: 3px solid #73AD21;
+}
+</code>
+             </article>
+       </section>
+       <section class="main-section" id="Overflow">
+           <header>Overflow</header>
+             <article>
+                 <p>The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</p>
+                 <p>The overflow property has the following values:</p>
+                 <li>visible - Default. The overflow is not clipped. The content renders outside the element's box</li>
+                 <li>hidden - The overflow is clipped, and the rest of the content will be invisible</li>
+                 <li>scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+                 <li>auto - Similar to scroll, but it adds scrollbars only when necessary</li>
+<code>div {
+width: 200px;
+height: 50px;
+background-color: #eee;
+overflow: visible;
+}   		  	
+</code>
+             </article>
+       </section>
+       <section class="main-section" id="Flex">
+           <header>Flex</header>
+             <article>
+                 <p>Before the Flexbox Layout module, there were four layout modes:</p>
+                 <li>Block, for sections in a webpage</li>
+                 <li>Inline, for text</li>
+                 <li>Table, for two-dimensional table data</li>
+                 <li>Positioned, for explicit position of an element</li>
+             </article>
+       </section>
+       <section class="main-section" id="Grid">
+           <header>Grid</header>
+             <article>
+                 <p>To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.</p>
+                 <p>Grid containers consist of grid items, placed inside columns and rows.</p>
+<code>.grid-container {
+display: grid;
+grid-template-columns: 80px;
+}
+</code>
+             </article>
+       </section>
+       <section class="main-section" id="Height-width">
+           <header>Height-width</header>
+             <article>
+                 <p>The height and width properties are used to set the height and width of an element.</p>
+                 <p>The height and width can be set to auto (this is default. Means that the browser calculates the height and width), or be specified in length values, like px, cm, etc., or in percent (%) of the containing block.</p>
+<code>div {
+ height: 200px;
+ width: 50%;
+ background-color: powderblue;
+ }
+ </code>
+             </article>
+       </section>
+       <section class="main-section" id="Tables">
+           <header>Tables</header>
+             <article>
+                 <p>To specify table borders in CSS, use the border property.</p>
+                 <p>The example below specifies a black border for table, th and td elements:</p>
+                 
+<code>table, th, td {
+border: 1px solid black;
+}
+</code>
+             </article>
+       </section>
+       <section class="main-section" id="Display">
+           <header>Display</header>
+             <article>
+                 <p>The display property is the most important CSS property for controlling layout.</p>
+                 <p>The display property specifies if/how an element is displayed.</p>
+                 <p>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.</p>
+<code>li {
+ display: inline;
+}
+</code>
+             </article>
+       </section>
+       <section class="main-section" id="Icons">
+           <header>Icons</header>
+             <article>
+                 <h4>How To Add Icons</h4>
+                 <p>The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome</p>
+                 <p>"Add the name of the specified icon class to any inline HTML element.</p>
+              <P>All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)</P>
+             
+             </article>
+       </section>
+   </main> 
+
+
+    
+</body>
+</html>
